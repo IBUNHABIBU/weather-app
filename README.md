@@ -1,10 +1,10 @@
 
-﻿# RESTAURANT PAGE
+﻿# WEATHER APP
 Is the Javascript  quiz to implement modular programming using webpack. I made a simple restaurant page to see the menu and contact. In the styling I used my own css framework that I built when I was doing html and css curriculum.
 
-![screenshot](https://github.com/IBUNHABIBU/restaurant_page/blob/modules/src/images/home.PNG)
-![screenshot](https://github.com/IBUNHABIBU/restaurant_page/blob/modules/src/images/menu.PNG)
-![screenshot](https://github.com/IBUNHABIBU/restaurant_page/blob/modules/src/images/contact.PNG)
+![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/modules/src/images/home.PNG)
+![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/modules/src/images/menu.PNG)
+![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/modules/src/images/contact.PNG)
 
 ## Built with
 * HTML
