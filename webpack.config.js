@@ -12,6 +12,17 @@ module.exports = {
     // libraryTarget: 'commonjs',
     // library: 'myfirstlibrary'
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use:[
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ]
+  },
   devServer: {
     port: 1234,
     contentBase: path.join(__dirname, 'dist')

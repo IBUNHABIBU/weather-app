@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/IBUNHABIBU/weather-app#readme",
   "devDependencies": {
+    "css-loader": "^4.2.1",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
