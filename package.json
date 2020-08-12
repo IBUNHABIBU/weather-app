@@ -1,0 +1,23 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Using api to fetch weather data",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IBUNHABIBU/weather-app.git"
+  },
+  "author": "Ibunhabibu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IBUNHABIBU/weather-app/issues"
+  },
+  "homepage": "https://github.com/IBUNHABIBU/weather-app#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
