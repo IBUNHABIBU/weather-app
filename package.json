@@ -4,6 +4,7 @@
   "description": "Using api to fetch weather data",
   "main": "webpack.config.js",
   "scripts": {
+    "dev": "webpack-dev-server",
     "build": "webpack"
   },
   "repository": {
@@ -18,6 +19,10 @@
   "homepage": "https://github.com/IBUNHABIBU/weather-app#readme",
   "devDependencies": {
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
   }
 }

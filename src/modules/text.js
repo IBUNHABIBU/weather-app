@@ -1,3 +1,3 @@
 export function writeToScreen(){
-  document.write("Hello world");
+  document.write("Hd I made it");
 }
