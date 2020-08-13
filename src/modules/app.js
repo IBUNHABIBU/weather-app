@@ -8,6 +8,13 @@ const api = {
   base: 'https://api.openweathermap.org/data/2.5/',
 };
 const search = document.querySelector('.searchbox');
+function getResult(data) {
+  fetch(`${api.base}weather?q=${data}&units=metric&APPID=${api.key}`)
+    .then( response => {
+      return response.json();
+    })
+    .then( displayResult );
+}
 function searchData(e) {
   if (e.keyCode === 13) {
     getResult(search.value);
@@ -27,13 +34,7 @@ function displayResult(weather) {
   hiLow.innerHTML = `${weather.main.temp_min}<span>&#xb0;C</span>  /  ${weather.main.temp_max}<span>&#xb0;C</span>`;
 }
 search.addEventListener('keypress', searchData);
-function getResult(data) {
-  fetch(`${api.base}weather?q=${data}&units=metric&APPID=${api.key}`)
-    .then( response => {
-      return response.json();
-    })
-    .then( displayResult );
-}
+
 function getDateFormat(d) {
   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   const days = ['Sunday', 'Monday',  'Tuesday',  'Wednesday',  'Thursday',  'Friday',  'Saturday'];
