@@ -22,5 +22,5 @@ export function UI() {
       <div class = "hi-lo"></div>
       
   </div>
-                      `
+                      `;
 }

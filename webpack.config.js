@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const htmlWebPackPlugin = require('html-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -16,7 +16,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/,
-        use:[
+        use: [
           {
             loader: 'html-loader',
           },
@@ -24,22 +24,22 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use:[
+        use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
         ],
       },
     ],
   },
   devServer: {
     port: 1234,
-    contentBase: path.join(__dirname, 'dist')
+    contentBase: path.join(__dirname, 'dist'),
   },
-  plugins: [ 
+  plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new htmlWebPackPlugin({
+    new HtmlWebPackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
     }),
    ]
 };
