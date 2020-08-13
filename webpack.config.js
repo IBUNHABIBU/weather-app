@@ -10,8 +10,6 @@ module.exports = {
     filename: 'js/main.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/assets/',
-    // libraryTarget: 'commonjs',
-    // library: 'myfirstlibrary'
   },
   module: {
     rules: [
@@ -20,7 +18,6 @@ module.exports = {
         use:[
           {
             loader: 'html-loader'
-            // option: { minimize: true }
           }
         ]
       },
