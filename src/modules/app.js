@@ -27,7 +27,11 @@ let now = new Date();
 let date = document.querySelector('.date');
 date.innerText = getDateFormat(now);
 const temp = document.querySelector('h1');
-temp.innerHTML = `${Math.round(weather.main.temp)}<span>&#xb0;C</span>`
+temp.innerHTML = `${Math.round(weather.main.temp)}<span>&#xb0;C</span>`;
+const weatherInfo = document.querySelector('.weather-condition');
+weatherInfo.innerText = weather.weather[0].main;
+const hiLow = document.querySelector('.hi-lo');
+hiLow.innerHTML = `${weather.main.temp_min}<span>&#xb0;C</span> ${weather.main.temp_max}<span>&#xb0;C</span>`;
 }
 function getDateFormat(d){
   const months =  ['January','February','March','April','May','June','July','August','September','October','November','December'];
