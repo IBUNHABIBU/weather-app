@@ -1,8 +1,8 @@
 ﻿
 ﻿# WEATHER APP
 Is the Javascript  quiz to implement the concept of API. I made a simple page to fetch for weather data. 
-![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/modules/src/images/mobile.PNG)
-![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/modules/src/images/desktop.PNG)
+![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/features/src/images/mobile.PNG)
+![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/features/src/images/desktop.PNG)
 
 ## Built with
 * HTML
