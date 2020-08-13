@@ -56,8 +56,9 @@ header{
 }
 h1{
   color: #FFF;
-  font-size: 4rem;
-  font-weight: 500;
+  font-size: 8rem;
+  font-weight: 700;
+  margin: 4px 0px;
   text-shadow: 2px 13px rgba(0,0,0,0.6);
 }
 .hi-lo{
@@ -66,12 +67,16 @@ h1{
   color: #FFF;
   font-size: 2rem;
   text-shadow: 0px 3px rgba(0,0,0,0.4);
+  padding: 2rem;
+  margin-left: 4rem;
 }
 .date{
   color: #FFF;
+  padding: 2rem;
+  margin-left: 3rem;
 }
 .weather-condition{
   color: #FFF;
   font-size: 1.5rem;
-  padding-left: 2rem;
+   padding-left: 8rem; 
 }

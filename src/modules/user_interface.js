@@ -22,4 +22,4 @@ export function UI(){
       
   </div>
                       `
-}
+ }
