@@ -1,4 +1,4 @@
 import { writeToScreen } from './text';
-import './style.css'
+import '../css/style.css'
 writeToScreen();
 if(module && module.hot) module.hot.accept;
