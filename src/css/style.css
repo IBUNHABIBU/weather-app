@@ -48,3 +48,30 @@ header{
   flex-direction: column;
   align-items: center;
 }
+.weather{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+}
+h1{
+  color: #FFF;
+  font-size: 4rem;
+  font-weight: 500;
+  text-shadow: 2px 13px rgba(0,0,0,0.6);
+}
+.hi-lo{
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  font-size: 2rem;
+  text-shadow: 0px 3px rgba(0,0,0,0.4);
+}
+.date{
+  color: #FFF;
+}
+.weather-condition{
+  color: #FFF;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
