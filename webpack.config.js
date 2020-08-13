@@ -1,10 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
 const htmlWebPackPlugin = require('html-webpack-plugin');
+
 module.exports = {
-  mode: "development",
+  mode: 'development',
   entry: {
-        myFile: './src/modules/app.js',
+    myFile: './src/modules/app.js',
   },
   output: {
     filename: 'js/main.js',
@@ -17,18 +18,18 @@ module.exports = {
         test: /\.html$/,
         use:[
           {
-            loader: 'html-loader'
-          }
-        ]
+            loader: 'html-loader',
+          },
+        ],
       },
       {
         test: /\.css$/,
         use:[
           'style-loader',
           'css-loader'
-        ]
-      }
-    ]
+        ],
+      },
+    ],
   },
   devServer: {
     port: 1234,

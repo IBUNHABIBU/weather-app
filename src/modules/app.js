@@ -16,8 +16,7 @@ function getDateFormat(d) {
   const month = months[d.getMonth()];
   const year = d.getFullYear();
   const date = d.getDate();
-  const time = d.getTime();
-  return `${day} ${date} ${month} ${year} `
+  return `${day} ${date} ${month} ${year} `;
 }
 function displayResult(weather) {
   const city = document.querySelector('.city');
@@ -37,7 +36,7 @@ function getResult(data) {
     .then( response => {
       return response.json();
     })
-    .then( displayResult );
+    .then(displayResult);
 }
 function searchData(e) {
   if (e.keyCode === 13) {
@@ -45,5 +44,4 @@ function searchData(e) {
   }
 }
 search.addEventListener('keypress', searchData);
-
-if(module && module.hot) module.hot.accept;
+if (module && module.hot) module.hot.accept;
