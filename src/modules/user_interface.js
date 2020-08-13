@@ -1,4 +1,4 @@
-export function UI() {
+function UI() {
   const nav = document.querySelector('nav');
   const input = document.createElement('input');
   input.placeholder = 'Enter your city....';
@@ -24,3 +24,4 @@ export function UI() {
   </div>
                       `;
 }
+export default UI;
