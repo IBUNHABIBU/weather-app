@@ -1,28 +1,28 @@
 ﻿
 ﻿# WEATHER APP
-Is the Javascript  quiz to implement modular programming using webpack. I made a simple restaurant page to see the menu and contact. In the styling I used my own css framework that I built when I was doing html and css curriculum.
-
-![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/modules/src/images/home.PNG)
-![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/modules/src/images/menu.PNG)
-![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/modules/src/images/contact.PNG)
+Is the Javascript  quiz to implement the concept of API. I made a simple page to fetch for weather data. 
+![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/modules/src/images/mobile.PNG)
+![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/modules/src/images/desktop.PNG)
 
 ## Built with
 * HTML
 * CSS
 * JAVASCRIPT
 * Webpack
-* My custom made css framework
+* fetch api using openweathermap
 
 ## Features 
-    * Showing the home page with navbar and the landing page with the big food image.
-    * Showing the menu
-    * Showing the contact
+    * Seach form to seach for any city in the world.
+    * Display temp
+    * Display low and high temperatue
+    * sky status
   
 ## Requirement 
 * HTML
 * CSS
 * JAVASCRIPT
 * Webpack
+* openweathermap
 
 ## Usage
 Clone this repository 
@@ -30,7 +30,7 @@ Clone this repository
  `$npm run build`
  
 
-## [Live demo](https://raw.githack.com/IBUNHABIBU/restaurant_page/modules/dist/index.html "Of the project") of the project
+## [Live demo](https://raw.githack.com/IBUNHABIBU/weather-app/modules/dist/index.html "Of the project") of the project
 
 ## link to  [Video presentation](https://#"Loom")
 
