@@ -27,10 +27,10 @@ Is the Javascript  quiz to implement the concept of API. I made a simple page to
 ## Usage
 Clone this repository 
  `$npm install` 
- `$npm run build`
+ `$npm run start:dev`
  
 
-## [Live demo](https://raw.githack.com/IBUNHABIBU/weather-app/modules/dist/index.html "Of the project") of the project
+## [Live demo](https://raw.githack.com/IBUNHABIBU/weather-app/feature/dist/index.html "Of the project") of the project
 
 ## link to  [Video presentation](https://#"Loom")
 
