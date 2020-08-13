@@ -42,4 +42,3 @@ function searchData(e) {
   }
 }
 search.addEventListener('keypress', searchData);
-if (module && module.hot) module.hot.accept;
