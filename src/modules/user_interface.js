@@ -1,4 +1,4 @@
-export function UI(){
+export function UI() {
   const nav = document.querySelector('nav');
   const input = document.createElement('input');
   input.placeholder = 'Enter your city....'
