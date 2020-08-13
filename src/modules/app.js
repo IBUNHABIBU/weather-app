@@ -14,7 +14,7 @@ function searchData(e){
 }
 
 function getResult(data){
-  fetch(`${api.base}weather?q=${data}&units==metric&APPID=${api.key}`)
+  fetch(`${api.base}weather?q=${data}&units=metric&APPID=${api.key}`)
   .then( response => {
     return response.json();
   })
