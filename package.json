@@ -4,7 +4,7 @@
   "description": "Using api to fetch weather data",
   "main": "webpack.config.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "start:dev": "webpack-dev-server",
     "build": "webpack"
   },
   "repository": {

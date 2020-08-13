@@ -1,3 +1,50 @@
-h1{
-  color:red;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:  sans-serif;
+  background-image: url('https://scx1.b-cdn.net/csz/news/800/2018/1-whytheweathe.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+.searchbox{
+  width:100%;
+  max-width: 280px;
+  padding:10px 15px;
+  border:none;
+  outline:none;
+  background-color:rgba(255,255,255,0.3);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom:3px solid #DF8E00;
+  color: #313131;
+  font-size:1.2rem;
+  font-weight: 500;
+  transition: 0.2s ease-out;
+ }
+ input:focus{
+  background-color: rgba(255,255,255,0.6)
+}
+.city{
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

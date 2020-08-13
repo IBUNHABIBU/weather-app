@@ -1,4 +1,4 @@
-import { writeToScreen } from './text';
+import { UI } from './user_interface';
 import '../css/style.css'
-writeToScreen();
+UI();
 if(module && module.hot) module.hot.accept;
