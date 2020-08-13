@@ -33,7 +33,7 @@ function displayResult(weather) {
 }
 function getResult(data) {
   fetch(`${api.base}weather?q=${data}&units=metric&APPID=${api.key}`)
-    .then(response => { return response.json() } )
+    .then(response => response.json())
     .then(displayResult);
 }
 function searchData(e) {
