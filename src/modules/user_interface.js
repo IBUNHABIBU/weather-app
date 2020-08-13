@@ -23,5 +23,5 @@ const UI = () => {
       
   </div>
                       `;
-}
+};
 export default UI;

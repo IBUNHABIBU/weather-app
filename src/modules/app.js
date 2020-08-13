@@ -1,4 +1,4 @@
-import { UI } from './user_interface';
+import UI from './user_interface';
 
 import '../css/style.css';
 
