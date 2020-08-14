@@ -90,3 +90,9 @@ h1 {
   font-size: 1.5rem;
   padding-left: 6rem;
 }
+#status{
+  padding-left: 6rem;
+}
+h1 span{
+  font-size:4rem;
+}

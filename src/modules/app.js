@@ -6,9 +6,9 @@ UI();
 const api = {
   key: 'd79e7d987356c35ab053eb9c2eb96551',
   base: 'https://api.openweathermap.org/data/2.5/',
+  icon: 'https://openweathermap.org/img/wn/'
 };
 const search = document.querySelector('.searchbox');
-
 function getDateFormat(d) {
   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -19,6 +19,10 @@ function getDateFormat(d) {
   return `${day} ${date} ${month} ${year} `;
 }
 function displayResult(weather) {
+  // console.log(weather);
+  const { main, description, icon } = weather.weather[0];
+  // const icon = `https://openweathermap.org/img/wn/${icon }@2x.png`;
+  console.log(icon);
   const city = document.querySelector('.city');
   city.innerText = `${weather.name}, ${weather.sys.country}`;
   const now = new Date();
@@ -26,6 +30,8 @@ function displayResult(weather) {
   date.innerText = getDateFormat(now);
   const temp = document.querySelector('h1');
   temp.innerHTML = `${Math.round(weather.main.temp)}<span>&#xb0;C</span>`;
+  const status = document.getElementById('status');
+  status.innerHTML= `<img class="city-icon" src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="weather icon">`;
   const weatherInfo = document.querySelector('.weather-condition');
   weatherInfo.innerText = weather.weather[0].main;
   const hiLow = document.querySelector('.hi-lo');
