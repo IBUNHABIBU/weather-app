@@ -20,6 +20,11 @@ const UI = () => {
       <div id = "status"></div>
       <div class="weather-condition"></div>
       <div class = "hi-lo"></div>
+      <input type="checkbox" id="switch"
+                    class="checkbox" /> 
+        <label for="switch" class="toggle"> 
+            <p>OFF    ON</p> 
+        </label> 
       
   </div>
                       `;
