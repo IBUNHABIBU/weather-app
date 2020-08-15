@@ -36,6 +36,12 @@ function displayResult(weather) {
   weatherInfo.innerText = weather.weather[0].main;
   const hiLow = document.querySelector('.hi-lo');
   hiLow.innerHTML = `${weather.main.temp_min}<span>&#xb0;C</span>  /  ${weather.main.temp_max}<span>&#xb0;C</span>`;
+  const toggleSwitch = document.querySelector('.units');
+  toggleSwitch.innerHTML = `<input type="checkbox" id="switch"
+  class="checkbox" /> 
+    <label for="switch" class="toggle"> 
+    <p><span class="celcious">C</span><span class="faren">F</span></p> 
+    </label> `;
 }
 function getResult(data) {
   fetch(`${api.base}weather?q=${data}&units=metric&APPID=${api.key}`)
