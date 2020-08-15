@@ -20,7 +20,7 @@ const UI = () => {
       <div id = "status"></div>
       <div class="weather-condition"></div>
       <div class = "hi-lo"></div>
-      <div class="units"></div>
+      <div class="units" id="switch-div"></div>
   </div>
                       `;
 };
