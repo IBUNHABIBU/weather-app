@@ -110,6 +110,7 @@ h1 span { font-size: 4rem; }
   height: 35px;
   border-radius: 30px;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 .toggle::after {

@@ -1,8 +1,9 @@
 ﻿
 ﻿# WEATHER APP
 Is the Javascript  quiz to implement the concept of API. I made a simple page to fetch for weather data. 
-![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/mobile.PNG)
-![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/desktop.PNG)
+![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/mobile.gif)
+![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/desktop.gif)
+![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/mobile.png)
 
 ## Built with
 * HTML
@@ -28,12 +29,8 @@ Is the Javascript  quiz to implement the concept of API. I made a simple page to
 Clone this repository 
  `$npm install` 
  `$npm run start:dev`
- 
 
 ## [Live demo](https://raw.githack.com/IBUNHABIBU/weather-app/feature/dist/index.html "Of the project") of the project
-
-## link to  [Video presentation](https://#"Loom")
-
 
 ## Author
 * Github: [IBUNHABIBU](https://github.com/IBUNHABIBU)
