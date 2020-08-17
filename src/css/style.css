@@ -24,7 +24,8 @@ header {
   align-items: center;
   padding: 10px 15px 15px;
 }
-.title{
+
+.title {
   color: #fff;
   font-size: 3rem;
   display: flex;
@@ -33,6 +34,7 @@ header {
   font-weight: 500;
   padding-top: 1rem;
 }
+
 .searchbox {
   width: 100%;
   max-width: 280px;
@@ -100,7 +102,8 @@ h1 {
 #status{ padding-left: 5rem }
 
 h1 span{ font-size:4rem }
- .toggle { 
+
+.toggle { 
   position : relative ; 
   display : inline-block; 
   width : 75px; 
@@ -133,10 +136,12 @@ h1 span{ font-size:4rem }
 .checkbox:checked + .toggle::after { left : 40px; } 
 
 .checkbox { display : none; } 
+
 .toggle p .celcious{
   position: relative;
   left: 3rem;
 }
+
 .units{
   margin-left: 7rem;
   margin-top: 1rem;
