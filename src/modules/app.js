@@ -27,15 +27,15 @@ function displayResult(weather) {
   const date = document.querySelector('.date');
   date.innerText = getDateFormat(now);
   const temp = document.querySelector('h1');
-  temp.innerHTML = `${Math.round(weather.main.temp)}<span>&#xb0;C</span>`;
-  
+  temp.innerHTML = `${Math.round(weather.main.temp)}<span class="temp-un">&#xb0;C</span>`;
+
   const status = document.getElementById('status');
   status.innerHTML= `<img class="city-icon" src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="weather icon">`;
   const weatherInfo = document.querySelector('.weather-condition');
   weatherInfo.innerText = weather.weather[0].main;
   const hiLow = document.querySelector('.hi-lo');
 
-  hiLow.innerHTML = `${weather.main.temp_min}<span>&#xb0;C</span>  /  ${weather.main.temp_max}<span>&#xb0;C</span>`;
+  hiLow.innerHTML = `${weather.main.temp_min}<span class="temp-un">&#xb0;C</span>  /  ${weather.main.temp_max}<span class="temp-un">&#xb0;C</span>`;
   const toggleSwitch = document.querySelector('.units');
   toggleSwitch.innerHTML = `<input type="checkbox" id="switch"
   class="checkbox" /> 
@@ -44,8 +44,18 @@ function displayResult(weather) {
     </label> `;
 
 }
-function getResult(data) {
-  fetch(`${api.base}weather?q=${data}&units=metric&APPID=${api.key}`)
+function getResult(data, unit='imperial') {
+  //   const checkbox = document.getElementById('switch-div');
+  // checkbox.addEventListener('click', function(e){
+  //   // console.log("hello");
+  // if(e.target.checked)
+  // {
+  //   unit= 'metric';
+  //    return unit;
+  // }
+  // });
+  //  console.log(unit);
+  fetch(`${api.base}weather?q=${data}&units=${unit}&APPID=${api.key}`)
     .then(response => response.json())
     .then(displayResult);
 }
@@ -54,21 +64,25 @@ function searchData(e) {
     getResult(search.value);
   }
 }
-search.addEventListener('keypress', searchData);
+ search.addEventListener('keypress', searchData);
 // const checkbox = document.getElementById('switch-div');
-const celciousToFarenheit = (temp) => {
-  return (temp * 9/5) + 32;
- }
- const checkUnits = (convert) =>
-{
+
+//  const checkUnits = (unit="imperial") =>
+// {
   const checkbox = document.getElementById('switch-div');
-let f= checkbox.addEventListener('click', function(e){
-  if(e.target.id==='switch')
-  {
-    console.log(celciousToFarenheit(100));
-  }
-  else {
-    console.log("hello");
-  }
+  checkbox.addEventListener('click', function(e){
+    
+    const tempun= document.querySelectorAll('.temp-un');
+  Array.from(tempun).forEach(item=> {
+    if(e.target.checked)
+    {
+      item.innerText="u";
+    } else {
+      item.innerText= "R";
+    }
+  });
+  
+
 });
-}
+// return unit;
+// }

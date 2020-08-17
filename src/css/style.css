@@ -22,9 +22,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 15px 15px;
+  padding: 10px 15px 15px;
 }
-
+.title{
+  color: #fff;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  padding-top: 1rem;
+}
 .searchbox {
   width: 100%;
   max-width: 280px;
@@ -81,7 +89,6 @@ h1 {
 
 .date {
   color: #fff;
-  padding: 1rem;
   margin-left: 2rem;
 }
 
