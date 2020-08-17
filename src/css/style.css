@@ -98,19 +98,17 @@ h1 {
   padding-left: 5rem;
 }
 #status{ padding-left: 5rem }
+
 h1 span{ font-size:4rem }
- /* toggle in label designing */
  .toggle { 
   position : relative ; 
   display : inline-block; 
   width : 75px; 
   height : 35px; 
-  /* background-color: red;  */
   border-radius: 30px; 
   border: 1px solid black; 
 } 
-      
-/* After slide changes */
+
 .toggle:after { 
   content: ''; 
   position: absolute; 
@@ -131,18 +129,10 @@ h1 span{ font-size:4rem }
   top: 6px;
   font-size: 1.2rem;
 } 
-      
-.checkbox:checked + .toggle::after { 
-  left : 40px;  
-} 
-      
-.checkbox:checked + .toggle { 
-  /* background-color: green;  */
-} 
-      
-.checkbox {  
-  display : none; 
-} 
+
+.checkbox:checked + .toggle::after { left : 40px; } 
+
+.checkbox { display : none; } 
 .toggle p .celcious{
   position: relative;
   left: 3rem;
