@@ -18,7 +18,7 @@ function getDateFormat(d) {
   return `${day} ${date} ${month} ${year} `;
 }
 function displayResult(weather) {
-  const { main, description, icon } = weather.weather[0];
+  const { icon } = weather.weather[0];
   const city = document.querySelector('.city');
   city.innerText = `${weather.name}, ${weather.sys.country}`;
   const now = new Date();
@@ -29,9 +29,9 @@ function displayResult(weather) {
   const checkbox = document.getElementById('switch-div');
   const hiLow = document.querySelector('.hi-lo');
   hiLow.innerHTML = `${weather.main.temp_min}<span class="temp-un">&#xb0;C</span>  /  ${weather.main.temp_max}<span class="temp-un">&#xb0;C</span>`;
-  checkbox.addEventListener('click', function(e){
+  checkbox.addEventListener ('click', function(e) {
    const tempun= document.querySelectorAll('.temp-un');
-     if(e.target.checked) {
+     if (e.target.checked) {
        temp.innerHTML = `${convert(Math.round(weather.main.temp))}<span class="temp-un">&#xb0;F</span>`;
        hiLow.innerHTML = `${convert(weather.main.temp_min)}<span class="temp-un">&#xb0;F</span>  /  ${convert(weather.main.temp_max)}<span class="temp-un">&#xb0;F</span>`;
       } else {
