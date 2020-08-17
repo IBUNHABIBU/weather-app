@@ -2,7 +2,6 @@ import UI from './user_interface';
 
 import '../css/style.css';
 
-// import './convertion';
 UI();
 const api = {
   key: 'd79e7d987356c35ab053eb9c2eb96551',
@@ -20,55 +19,27 @@ function getDateFormat(d) {
 }
 function displayResult(weather) {
   const { main, description, icon } = weather.weather[0];
-  // console.log(main.temp);
   const city = document.querySelector('.city');
   city.innerText = `${weather.name}, ${weather.sys.country}`;
   const now = new Date();
   const date = document.querySelector('.date');
   date.innerText = getDateFormat(now);
   const temp = document.querySelector('h1');
-
-     temp.innerHTML = `${Math.round(weather.main.temp)}<span class="temp-un">&#xb0;C</span>`;
-  
-    const checkbox = document.getElementById('switch-div');
-    
+  temp.innerHTML = `${Math.round(weather.main.temp)}<span class="temp-un">&#xb0;C</span>`;
+  const checkbox = document.getElementById('switch-div');
   const hiLow = document.querySelector('.hi-lo');
-
   hiLow.innerHTML = `${weather.main.temp_min}<span class="temp-un">&#xb0;C</span>  /  ${weather.main.temp_max}<span class="temp-un">&#xb0;C</span>`;
-    checkbox.addEventListener('click', function(e){
-      
-      const tempun= document.querySelectorAll('.temp-un');
-      // const tempMain= document.querySelector('.main-temp');
-    // Array.from(tempun.forEach(item=> {
-  
-      let current_unit ;
-      let tval = document.querySelector('h1');
-      if(e.target.checked)
-      {
-        temp.innerHTML = `${convert(Math.round(weather.main.temp))}<span class="temp-un">&#xb0;F</span>`;
-        // current_unit= "imperial";
-        
-  hiLow.innerHTML = `${convert(weather.main.temp_min)}<span class="temp-un">&#xb0;F</span>  /  ${convert(weather.main.temp_max)}<span class="temp-un">&#xb0;F</span>`;
-        
-        // console.log(current_unit);
+  checkbox.addEventListener('click', function(e){
+   const tempun= document.querySelectorAll('.temp-un');
+     if(e.target.checked) {
+       temp.innerHTML = `${convert(Math.round(weather.main.temp))}<span class="temp-un">&#xb0;F</span>`;
+       hiLow.innerHTML = `${convert(weather.main.temp_min)}<span class="temp-un">&#xb0;F</span>  /  ${convert(weather.main.temp_max)}<span class="temp-un">&#xb0;F</span>`;
       } else {
-        // current_unit = "metric";
-        temp.innerHTML = `${Math.round(weather.main.temp)}<span class="temp-un">&#xb0;C</span>`;
-        
-  const hiLow = document.querySelector('.hi-lo');
-
-  hiLow.innerHTML = `${weather.main.temp_min}<span class="temp-un">&#xb0;C</span>  /  ${weather.main.temp_max}<span class="temp-un">&#xb0;C</span>`;
-
+       temp.innerHTML = `${Math.round(weather.main.temp)}<span class="temp-un">&#xb0;C</span>`;
+       const hiLow = document.querySelector('.hi-lo');
+       hiLow.innerHTML = `${weather.main.temp_min}<span class="temp-un">&#xb0;C</span>  /  ${weather.main.temp_max}<span class="temp-un">&#xb0;C</span>`;
       }
-      //  getResult(search.value, current_unit);
-      
-    // });
   });
-
-
-
-
-
   const status = document.getElementById('status');
   status.innerHTML= `<img class="city-icon" src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="weather icon">`;
   const weatherInfo = document.querySelector('.weather-condition');
@@ -79,10 +50,8 @@ function displayResult(weather) {
     <label for="switch" class="toggle"> 
     <p><span class="celcious">C</span><span class="faren">F</span></p> 
     </label> `;
-
 }
 function getResult(data, unit='metric') {
- 
   fetch(`${api.base}weather?q=${data}&units=${unit}&APPID=${api.key}`)
     .then(response => response.json())
     .then(displayResult);
@@ -93,33 +62,7 @@ function searchData(e) {
   }
 }
  search.addEventListener('keypress', searchData);
-// const checkbox = document.getElementById('switch-div');
 function convert(temp){
   let toFarenheit = temp*9/5+32
   return Math.floor(toFarenheit);
 }
-//  const checkUnits = (unit="imperial") =>
-// {
-//   const checkbox = document.getElementById('switch-div');
-//   checkbox.addEventListener('click', function(e){
-    
-//     const tempun= document.querySelectorAll('.temp-un');
-//     const tempMain= document.querySelector('.main-temp');
-//   // Array.from(tempun.forEach(item=> {
-
-//     let current_unit ;
-//     let tval = document.querySelector('h1');
-//     if(e.target.checked)
-//     {
-//       tempMain.innerHTML = `${convert(Math.round(weather.main.temp))}`;
-//       // current_unit= "imperial";
-//       // item.innerHTML="&#xb0;F";
-//       // console.log(current_unit);
-//     } else {
-//       // current_unit = "metric";
-//       // item.innerHTML= "&#xb0;C";
-//     }
-//     //  getResult(search.value, current_unit);
-    
-//   // });
-// });
