@@ -31,7 +31,7 @@ Clone this repository
  `$npm install` 
  `$npm run start:dev`
 
-## [Live demo](https://raw.githack.com/IBUNHABIBU/weather-app/feature/dist/index.html "Of the project") of the project
+## [Live demo](https://ibunhabibuweather.netlify.app/ "Of the project") of the project
 
 ## Author
 * Github: [IBUNHABIBU](https://github.com/IBUNHABIBU)
