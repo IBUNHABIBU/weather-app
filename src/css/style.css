@@ -104,16 +104,16 @@ h1 {
 h1 span { font-size: 4rem; }
 
 .toggle {
-  position: relative ;
+  position: relative;
   display: inline-block;
   width: 75px;
-  height : 35px;
+  height: 35px;
   border-radius: 30px;
   border: 1px solid black;
 }
 
 .toggle::after {
-  content: ''; 
+  content: '';
   position: absolute;
   width: 32px;
   height: 32px;
@@ -122,27 +122,27 @@ h1 span { font-size: 4rem; }
   top: 0;
   left: 1px;
   transition: all 0.5s;
-} 
+}
 
 .toggle p {
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #f0f7f6;
   position: relative;
   top: 6px;
   font-size: 1.2rem;
-} 
+}
 
-.checkbox:checked + .toggle::after { left : 40px; }
+.checkbox:checked + .toggle::after { left: 40px; }
 
-.checkbox { display : none; }
+.checkbox { display: none; }
 
-.toggle p .celcious{
+.toggle p .celcious {
   position: relative;
   left: 3rem;
 }
 
-.units{
+.units {
   margin-left: 7rem;
   margin-top: 1rem;
 }
