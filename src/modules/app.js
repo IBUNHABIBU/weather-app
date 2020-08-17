@@ -73,12 +73,12 @@ function searchData(e) {
   checkbox.addEventListener('click', function(e){
     
     const tempun= document.querySelectorAll('.temp-un');
-  Array.from(tempun).forEach(item=> {
+  /*Array.from(*/tempun.forEach(item=> {
     if(e.target.checked)
     {
-      item.innerText="u";
+      item.innerHTML="&#xb0;F";
     } else {
-      item.innerText= "R";
+      item.innerHTML= "&#xb0;C";
     }
   });
   
