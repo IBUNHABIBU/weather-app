@@ -27,15 +27,52 @@ function displayResult(weather) {
   const date = document.querySelector('.date');
   date.innerText = getDateFormat(now);
   const temp = document.querySelector('h1');
-  temp.innerHTML = `${Math.round(weather.main.temp)}<span class="temp-un">&#xb0;C</span>`;
+
+     temp.innerHTML = `${Math.round(weather.main.temp)}<span class="temp-un">&#xb0;C</span>`;
+  
+    const checkbox = document.getElementById('switch-div');
+    
+  const hiLow = document.querySelector('.hi-lo');
+
+  hiLow.innerHTML = `${weather.main.temp_min}<span class="temp-un">&#xb0;C</span>  /  ${weather.main.temp_max}<span class="temp-un">&#xb0;C</span>`;
+    checkbox.addEventListener('click', function(e){
+      
+      const tempun= document.querySelectorAll('.temp-un');
+      // const tempMain= document.querySelector('.main-temp');
+    // Array.from(tempun.forEach(item=> {
+  
+      let current_unit ;
+      let tval = document.querySelector('h1');
+      if(e.target.checked)
+      {
+        temp.innerHTML = `${convert(Math.round(weather.main.temp))}<span class="temp-un">&#xb0;F</span>`;
+        // current_unit= "imperial";
+        
+  hiLow.innerHTML = `${convert(weather.main.temp_min)}<span class="temp-un">&#xb0;F</span>  /  ${convert(weather.main.temp_max)}<span class="temp-un">&#xb0;F</span>`;
+        
+        // console.log(current_unit);
+      } else {
+        // current_unit = "metric";
+        temp.innerHTML = `${Math.round(weather.main.temp)}<span class="temp-un">&#xb0;C</span>`;
+        
+  const hiLow = document.querySelector('.hi-lo');
+
+  hiLow.innerHTML = `${weather.main.temp_min}<span class="temp-un">&#xb0;C</span>  /  ${weather.main.temp_max}<span class="temp-un">&#xb0;C</span>`;
+
+      }
+      //  getResult(search.value, current_unit);
+      
+    // });
+  });
+
+
+
+
 
   const status = document.getElementById('status');
   status.innerHTML= `<img class="city-icon" src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="weather icon">`;
   const weatherInfo = document.querySelector('.weather-condition');
   weatherInfo.innerText = weather.weather[0].main;
-  const hiLow = document.querySelector('.hi-lo');
-
-  hiLow.innerHTML = `${weather.main.temp_min}<span class="temp-un">&#xb0;C</span>  /  ${weather.main.temp_max}<span class="temp-un">&#xb0;C</span>`;
   const toggleSwitch = document.querySelector('.units');
   toggleSwitch.innerHTML = `<input type="checkbox" id="switch"
   class="checkbox" /> 
@@ -44,17 +81,8 @@ function displayResult(weather) {
     </label> `;
 
 }
-function getResult(data, unit='imperial') {
-  //   const checkbox = document.getElementById('switch-div');
-  // checkbox.addEventListener('click', function(e){
-  //   // console.log("hello");
-  // if(e.target.checked)
-  // {
-  //   unit= 'metric';
-  //    return unit;
-  // }
-  // });
-  //  console.log(unit);
+function getResult(data, unit='metric') {
+ 
   fetch(`${api.base}weather?q=${data}&units=${unit}&APPID=${api.key}`)
     .then(response => response.json())
     .then(displayResult);
@@ -66,23 +94,32 @@ function searchData(e) {
 }
  search.addEventListener('keypress', searchData);
 // const checkbox = document.getElementById('switch-div');
-
+function convert(temp){
+  let toFarenheit = temp*9/5+32
+  return Math.floor(toFarenheit);
+}
 //  const checkUnits = (unit="imperial") =>
 // {
-  const checkbox = document.getElementById('switch-div');
-  checkbox.addEventListener('click', function(e){
+//   const checkbox = document.getElementById('switch-div');
+//   checkbox.addEventListener('click', function(e){
     
-    const tempun= document.querySelectorAll('.temp-un');
-  /*Array.from(*/tempun.forEach(item=> {
-    if(e.target.checked)
-    {
-      item.innerHTML="&#xb0;F";
-    } else {
-      item.innerHTML= "&#xb0;C";
-    }
-  });
-  
+//     const tempun= document.querySelectorAll('.temp-un');
+//     const tempMain= document.querySelector('.main-temp');
+//   // Array.from(tempun.forEach(item=> {
 
-});
-// return unit;
-// }
+//     let current_unit ;
+//     let tval = document.querySelector('h1');
+//     if(e.target.checked)
+//     {
+//       tempMain.innerHTML = `${convert(Math.round(weather.main.temp))}`;
+//       // current_unit= "imperial";
+//       // item.innerHTML="&#xb0;F";
+//       // console.log(current_unit);
+//     } else {
+//       // current_unit = "metric";
+//       // item.innerHTML= "&#xb0;C";
+//     }
+//     //  getResult(search.value, current_unit);
+    
+//   // });
+// });
