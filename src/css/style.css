@@ -99,18 +99,18 @@ h1 {
   font-size: 1.5rem;
   padding-left: 5rem;
 }
-#status{ padding-left: 5rem }
+#status { padding-left: 5rem; }
 
-h1 span{ font-size:4rem }
+h1 span { font-size: 4rem; }
 
 .toggle { 
-  position : relative ; 
-  display : inline-block; 
-  width : 75px; 
-  height : 35px; 
-  border-radius: 30px; 
-  border: 1px solid black; 
-} 
+  position : relative ;
+  display : inline-block;
+  width : 75px;
+  height : 35px;
+  border-radius: 30px;
+  border: 1px solid black;
+}
 
 .toggle:after { 
   content: ''; 
@@ -123,7 +123,7 @@ h1 span{ font-size:4rem }
   left: 1px; 
   transition:  all 0.5s; 
 } 
-      
+
 .toggle p { 
   font-family: Arial, Helvetica, sans-serif; 
   font-weight: bold;

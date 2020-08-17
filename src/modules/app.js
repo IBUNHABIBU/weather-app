@@ -17,6 +17,12 @@ function getDateFormat(d) {
   const date = d.getDate();
   return `${day} ${date} ${month} ${year} `;
 }
+
+function convert(temp){
+  let toFarenheit = temp*9/5+32
+  return Math.floor(toFarenheit);
+}
+
 function displayResult(weather) {
   const { icon } = weather.weather[0];
   const city = document.querySelector('.city');
@@ -62,7 +68,3 @@ function searchData(e) {
   }
 }
  search.addEventListener('keypress', searchData);
-function convert(temp){
-  let toFarenheit = temp*9/5+32
-  return Math.floor(toFarenheit);
-}
