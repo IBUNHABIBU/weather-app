@@ -18,8 +18,8 @@ function getDateFormat(d) {
   return `${day} ${date} ${month} ${year} `;
 }
 
-function convert (temp){
-  let toFarenheit = (temp * 9 / 5) + 32;
+function convert(temp) {
+  const toFarenheit = (temp * 9 / 5) + 32;
   return Math.floor(toFarenheit);
 }
 
@@ -35,15 +35,15 @@ function displayResult(weather) {
   const checkbox = document.getElementById('switch-div');
   const hiLow = document.querySelector('.hi-lo');
   hiLow.innerHTML = `${weather.main.temp_min}<span class="temp-un">&#xb0;C</span>  /  ${weather.main.temp_max}<span class="temp-un">&#xb0;C</span>`;
-  checkbox.addEventListener('click', function(e) {
-     if (e.target.checked) {
-       temp.innerHTML = `${convert(Math.round(weather.main.temp))}<span class="temp-un">&#xb0;F</span>`;
-       hiLow.innerHTML = `${convert(weather.main.temp_min)}<span class="temp-un">&#xb0;F</span>  /  ${convert(weather.main.temp_max)}<span class="temp-un">&#xb0;F</span>`;
-      } else {
-       temp.innerHTML = `${Math.round(weather.main.temp)}<span class="temp-un">&#xb0;C</span>`;
-       const hiLow = document.querySelector('.hi-lo');
-       hiLow.innerHTML = `${weather.main.temp_min}<span class="temp-un">&#xb0;C</span>  /  ${weather.main.temp_max}<span class="temp-un">&#xb0;C</span>`;
-      }
+  checkbox.addEventListener('click', (e) => {
+    if (e.target.checked) {
+      temp.innerHTML = `${convert(Math.round(weather.main.temp))}<span class="temp-un">&#xb0;F</span>`;
+      hiLow.innerHTML = `${convert(weather.main.temp_min)}<span class="temp-un">&#xb0;F</span>  /  ${convert(weather.main.temp_max)}<span class="temp-un">&#xb0;F</span>`;
+    } else {
+      temp.innerHTML = `${Math.round(weather.main.temp)}<span class="temp-un">&#xb0;C</span>`;
+      const hiLow = document.querySelector('.hi-lo');
+      hiLow.innerHTML = `${weather.main.temp_min}<span class="temp-un">&#xb0;C</span>  /  ${weather.main.temp_max}<span class="temp-un">&#xb0;C</span>`;
+    }
   });
   const status = document.getElementById('status');
   status.innerHTML = `<img class="city-icon" src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="weather icon">`;
@@ -66,4 +66,4 @@ function searchData(e) {
     getResult(search.value);
   }
 }
- search.addEventListener('keypress', searchData);
+search.addEventListener('keypress', searchData);
