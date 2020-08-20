@@ -12,8 +12,6 @@ const api = {
 };
 const search = document.querySelector('.searchbox');
 
-search.addEventListener('keypress', searchData);
-
 function getResult(data) {
   fetch(`${api.base}weather?q=${data}&units=metric&APPID=${api.key}`)
     .then(response => response.json())
@@ -24,4 +22,4 @@ function searchData(e) {
     getResult(search.value);
   }
 }
-// searchData();
+search.addEventListener('keypress', searchData);

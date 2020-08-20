@@ -1,4 +1,4 @@
-import convert from "./converter";
+import convert from './converter';
 
 function getDateFormat(d) {
   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
