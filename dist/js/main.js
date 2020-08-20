@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "71aa3865b40c76ccbce0";
+/******/ 	var hotCurrentHash = "def352d26e64794d9f7f";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -847,7 +847,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/assets/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
@@ -914,7 +914,18 @@ eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/run
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _user_interface__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./user_interface */ \"./src/modules/user_interface.js\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\r\n\r\n\r\nObject(_user_interface__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\nconst api = {\r\n  key: 'd79e7d987356c35ab053eb9c2eb96551',\r\n  base: 'https://api.openweathermap.org/data/2.5/',\r\n};\r\nconst search = document.querySelector('.searchbox');\r\nfunction getDateFormat(d) {\r\n  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];\r\n  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];\r\n  const day = days[d.getDay()];\r\n  const month = months[d.getMonth()];\r\n  const year = d.getFullYear();\r\n  const date = d.getDate();\r\n  return `${day} ${date} ${month} ${year} `;\r\n}\r\n\r\nfunction convert(temp) {\r\n  const toFarenheit = (temp * (9 / 5)) + 32;\r\n  return Math.floor(toFarenheit);\r\n}\r\n\r\nfunction displayResult(weather) {\r\n  const { icon } = weather.weather[0];\r\n  const city = document.querySelector('.city');\r\n  city.innerText = `${weather.name}, ${weather.sys.country}`;\r\n  const now = new Date();\r\n  const date = document.querySelector('.date');\r\n  date.innerText = getDateFormat(now);\r\n  const temp = document.querySelector('h1');\r\n  temp.innerHTML = `${Math.round(weather.main.temp)}<span class=\"temp-un\">&#xb0;C</span>`;\r\n  const checkbox = document.getElementById('switch-div');\r\n  const hiLow = document.querySelector('.hi-lo');\r\n  hiLow.innerHTML = `${weather.main.temp_min}<span class=\"temp-un\">&#xb0;C</span>  /  ${weather.main.temp_max}<span class=\"temp-un\">&#xb0;C</span>`;\r\n  checkbox.addEventListener('click', (e) => {\r\n    if (e.target.checked) {\r\n      temp.innerHTML = `${convert(Math.round(weather.main.temp))}<span class=\"temp-un\">&#xb0;F</span>`;\r\n      hiLow.innerHTML = `${convert(weather.main.temp_min)}<span class=\"temp-un\">&#xb0;F</span>  /  ${convert(weather.main.temp_max)}<span class=\"temp-un\">&#xb0;F</span>`;\r\n    } else {\r\n      temp.innerHTML = `${Math.round(weather.main.temp)}<span class=\"temp-un\">&#xb0;C</span>`;\r\n      const hiLow = document.querySelector('.hi-lo');\r\n      hiLow.innerHTML = `${weather.main.temp_min}<span class=\"temp-un\">&#xb0;C</span>  /  ${weather.main.temp_max}<span class=\"temp-un\">&#xb0;C</span>`;\r\n    }\r\n  });\r\n  const status = document.getElementById('status');\r\n  status.innerHTML = `<img class=\"city-icon\" src=\"https://openweathermap.org/img/wn/${icon}@2x.png\" alt=\"weather icon\">`;\r\n  const weatherInfo = document.querySelector('.weather-condition');\r\n  weatherInfo.innerText = weather.weather[0].main;\r\n  const toggleSwitch = document.querySelector('.units');\r\n  toggleSwitch.innerHTML = `<input type=\"checkbox\" id=\"switch\"\r\n  class=\"checkbox\" /> \r\n    <label for=\"switch\" class=\"toggle\"> \r\n    <p><span class=\"celcious\">C</span><span class=\"faren\">F</span></p> \r\n    </label> `;\r\n}\r\nfunction getResult(data) {\r\n  fetch(`${api.base}weather?q=${data}&units=metric&APPID=${api.key}`)\r\n    .then(response => response.json())\r\n    .then(displayResult);\r\n}\r\nfunction searchData(e) {\r\n  if (e.keyCode === 13) {\r\n    getResult(search.value);\r\n  }\r\n}\r\nsearch.addEventListener('keypress', searchData);\n\n//# sourceURL=webpack:///./src/modules/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _user_interface__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./user_interface */ \"./src/modules/user_interface.js\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fetch */ \"./src/modules/fetch.js\");\n/* harmony import */ var _fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fetch__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nObject(_user_interface__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\nconst api = {\r\n  key: 'd79e7d987356c35ab053eb9c2eb96551',\r\n  base: 'https://api.openweathermap.org/data/2.5/',\r\n};\r\nconst search = document.querySelector('.searchbox');\r\n\r\nsearch.addEventListener('keypress', searchData);\r\n\r\nfunction getResult(data) {\r\n  fetch(`${api.base}weather?q=${data}&units=metric&APPID=${api.key}`)\r\n    .then(response => response.json())\r\n    .then(_fetch__WEBPACK_IMPORTED_MODULE_2___default.a);\r\n}\r\nfunction searchData(e) {\r\n  if (e.keyCode === 13) {\r\n    getResult(search.value);\r\n  }\r\n}\r\n// searchData();\r\n\n\n//# sourceURL=webpack:///./src/modules/app.js?");
+
+/***/ }),
+
+/***/ "./src/modules/fetch.js":
+/*!******************************!*\
+  !*** ./src/modules/fetch.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module parse failed: Identifier 'convert' has already been declared (3:7)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| import convert from \\\"./converter\\\";\\n| \\n> import convert from './converter';\\n| \\n| function getDateFormat(d) {\");\n\n//# sourceURL=webpack:///./src/modules/fetch.js?");
 
 /***/ }),
 
