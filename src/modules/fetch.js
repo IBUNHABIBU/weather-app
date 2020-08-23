@@ -9,15 +9,15 @@ function getDateFormat(d) {
   const date = d.getDate();
   return `${day} ${date} ${month} ${year} `;
 }
-function showStatus(id){
-   const body = document.querySelector('body');
-  if(id < 250 ){
-     body.style.backgroundImage = "url('storm')";
+function showStatus(id) {
+  const body = document.querySelector('body');
+  if (id < 250 ) {
+    body.style.backgroundImage = "url('storm')";
   }
-  else if(id < 350 ){
+  else if(id < 350 ) {
     body.style.backgroundImage = "url('drizzle')";
   }
-  if(id < 550 ){
+  else if (id < 550 ) {
     body.style.backgroundImage = "url('rain')";
  }
 }
