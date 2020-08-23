@@ -35,7 +35,6 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',
