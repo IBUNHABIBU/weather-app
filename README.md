@@ -11,7 +11,7 @@ Is the Javascript  quiz to implement the concept of API. I made a simple page to
 * CSS
 * JAVASCRIPT
 * Webpack
-* fetch api using openweathermap
+* fetch API using OpenWeatherMap
 
 ## Features 
     * Seach form to seach for any city in the world.
@@ -22,9 +22,9 @@ Is the Javascript  quiz to implement the concept of API. I made a simple page to
 ## Requirement 
 * HTML
 * CSS
-* JAVASCRIPT
+* JavaScript
 * Webpack
-* openweathermap
+* OpenWeatherMap
 
 ## Usage
 Clone this repository 
