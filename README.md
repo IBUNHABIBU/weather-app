@@ -8,8 +8,8 @@
   <h3 align="center"> Is the Javascript  quiz to implement the concept of API. I made a simple page to fetch for weather data.</h3>
 
   <p align="center">
-    <a href="https://github.com/IBUNHABIBU/platform-game/issues">Report Bug</a>
-    <a href="https://github.com/IBUNHABIBU/platform-game/issues">Request Feature</a>
+    <a href="https://github.com/IBUNHABIBU/weather-app/issues">Report Bug</a>
+    <a href="https://github.com/IBUNHABIBU/weather-app/issues">Request Feature</a>
   </p>
 </p>
 
@@ -59,12 +59,12 @@ Credits goes to
 This project is [MIT](LICENCE) licensed.
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/IBUNHABIBU/tic-tac-toe-game.svg?style=flat-square
-[contributors-url]: https://github.com/IBUNHABIBU/tic-tac-toe-game/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/IBUNHABIBU/tic-tac-toe-game.svg?style=flat-square
-[forks-url]: https://github.com/IBUNHABIBU/tic-tac-toe-game/network/members
-[stars-shield]: https://img.shields.io/github/stars/IBUNHABIBU/tic-tac-toe-game.svg?style=flat-square
-[stars-url]: https://github.com/IBUNHABIBU/tic-tac-toe-game/stargazers
-[issues-shield]: https://img.shields.io/github/issues/IBUNHABIBU/tic-tac-toe-game.svg?style=flat-square
-[issues-url]: https://github.com/IBUNHABIBU/tic-tac-toe-game/issues
+[contributors-shield]: https://img.shields.io/github/contributors/IBUNHABIBU/weather-app.svg?style=flat-square
+[contributors-url]: https://github.com/IBUNHABIBU/weather-app/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/IBUNHABIBU/weather-app.svg?style=flat-square
+[forks-url]: https://github.com/IBUNHABIBU/weather-app/network/members
+[stars-shield]: https://img.shields.io/github/stars/IBUNHABIBU/weather-app.svg?style=flat-square
+[stars-url]: https://github.com/IBUNHABIBU/weather-app/stargazers
+[issues-shield]: https://img.shields.io/github/issues/IBUNHABIBU/weather-app.svg?style=flat-square
+[issues-url]: https://github.com/IBUNHABIBU/weather-app/issues
 
