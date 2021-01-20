@@ -1,3 +1,7 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
 <p align="center">
   <a href="git@github.com:IBUNHABIBU/platform-game.git">
