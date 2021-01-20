@@ -12,6 +12,7 @@
     <a href="https://github.com/IBUNHABIBU/platform-game/issues">Request Feature</a>
   </p>
 </p>
+
 ![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/mobile.gif)
 ![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/desktop.gif)
 ![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/mobile.PNG)
