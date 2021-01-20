@@ -1,7 +1,17 @@
-﻿
-﻿# WEATHER APP
-Is the Javascript  quiz to implement the concept of API. I made a simple page to fetch for weather data. 
 
+<p align="center">
+  <a href="git@github.com:IBUNHABIBU/platform-game.git">
+    <p align="center"> <img src="https://raw.githubusercontent.com/github/explore/b7c8510756ee50efb38d1f01896e72b7a9737296/topics/phaser/phaser.png" alt="Phaser" width="100" height="100"> </p>
+  </a>
+
+  <h2 align="center"> WEATHER APP</h2>
+  <h3 align="center"> Is the Javascript  quiz to implement the concept of API. I made a simple page to fetch for weather data.</h3>
+
+  <p align="center">
+    <a href="https://github.com/IBUNHABIBU/platform-game/issues">Report Bug</a>
+    <a href="https://github.com/IBUNHABIBU/platform-game/issues">Request Feature</a>
+  </p>
+</p>
 ![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/mobile.gif)
 ![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/desktop.gif)
 ![screenshot](https://github.com/IBUNHABIBU/weather-app/blob/feature/src/images/mobile.PNG)
