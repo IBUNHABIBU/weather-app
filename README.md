@@ -45,6 +45,7 @@
 Clone this repository 
 
  `$npm install` 
+ 
  `$npm run start:dev`
 
 ## [Live demo](https://ibunhabibuweather.netlify.app/ "Of the project") of the project
