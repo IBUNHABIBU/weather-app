@@ -57,10 +57,11 @@ Clone this repository
 
 ## your support 
 Give a :star: if you liked this project 
-## Acknowledgments
-Credits goes to
+## AcknowledgmentsCredits go to
 
-- All of my standup team for their feedback that make me to improve technically
+* My mentor Tunde Oratade for technical assistance.
+* All Microverse TSEs for their feedback that makes me improve technically.
+
 ## 📝 License
 This project is [MIT](LICENCE) licensed.
 <!-- MARKDOWN LINKS & IMAGES -->
