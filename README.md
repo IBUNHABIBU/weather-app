@@ -29,10 +29,10 @@
 * fetch API using OpenWeatherMap
 
 ## Features 
-    * Seach form to seach for any city in the world.
-    * Display temp
-    * Display low and high temperatue
-    * sky status
+  * Seach form to seach for any city in the world.
+  * Display temp
+  * Display low and high temperatue
+  * sky status
   
 ## Requirement 
 * HTML
