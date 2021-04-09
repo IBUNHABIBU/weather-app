@@ -32,7 +32,7 @@
   * Seach form to seach for any city in the world.
   * Display temp
   * Display low and high temperatue
-  * sky status
+  * sky status changes according to weather conditions like clear, sunny, cloudy etc
   
 ## Requirement 
 * HTML
